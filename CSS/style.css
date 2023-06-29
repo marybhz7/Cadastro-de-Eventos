@@ -1,0 +1,302 @@
+/* style.css */
+:root
+{
+    --middleWhite: #E5F0FF;
+    --white: #FFF;
+    --middleBlue: #039;
+    --black: #000;
+    --newsBlue: #a3e3ff;
+    --fontSmall: 12px;
+    --fontMedium: 20px;
+}
+body 
+{    
+    background-image: linear-gradient(to top, to bottom, rgba(0,0,255,0),rgba(0,0,255,0), rgba(163,227,255,0.9));
+    color: #000;
+    font: 12px Verdana, sans-serif;
+    overflow-x: hidden;
+    border-collapse: collapse;
+
+}
+
+.insere-texto
+{    
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    margin-left: auto 0;
+
+    /* Para dar o mesmo width a todos os campo de texto */
+    width: 200px;
+    height: 200px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*Barra superior*/ 
+.barra-superior
+{
+    background-image: linear-gradient(to top, rgba(0,0,255,0), rgba(163,227,255,0.9));
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: 15%;
+    background-color: var(--white);
+    z-index: 100;
+    position:fixed;
+    display: flex; 
+    padding-bottom: 5px;
+    border: 2px solid var(--black);   
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+
+}
+.menu
+{
+    margin: 0 auto;
+    font-size: var(--fontMedium);
+    padding-bottom: 50px;
+}
+.barra-superior li
+{    
+    list-style: none;
+    padding-left: 15px;
+    float: left;
+    gap: 25px;
+}
+.barra-superior a
+{
+    text-decoration: none;
+    color: var(--black);
+}
+.barra-superior a:hover 
+{
+    background: var(--middleWhite);
+    color: var(--middleBlue);
+    border-radius: 5px;
+}
+.user
+{
+    padding: 20px;
+}
+/*Conteúdo*/
+.conteudo 
+{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    border: 2px solid var(--black);
+    margin-top: 13vh;
+    height: 100%;
+    justify-content: center; 
+    border-radius: 5px;
+    padding-bottom: 110vh;
+}
+.quadro-events
+{
+    margin: 50 50 auto;
+    float: left;
+    border-radius: 5px;  
+    height: 27vh;  
+    border: 2px solid var(--black);   
+    width: 27vw;
+    padding: 40px;
+}
+.banner
+{
+    margin: 0 auto;
+    float: left;
+}
+.banner img
+{
+    margin: 2em;
+    margin-bottom: 0;
+    height: 15vh;
+    width: 15vw;
+    border-radius: 10px;
+}
+.banner-detail img
+{
+    margin: 2em;
+    margin-bottom: 0;
+    height: 39vh;
+    width: 39vw;
+    border-radius: 10px;
+}
+
+
+
+
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #004f99;
+  }
+  
+  .button-secondary {
+    background-color: #999;
+  }
+  
+  .button-secondary:hover {
+    background-color: #777;
+  }
+  
+
+
+    /*Estilo da paginação*/
+
+.paginação
+{
+    position: fixed;
+    width: 30%;
+    left: 50%;
+    top: 95%;
+}
+ul.paginação 
+{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.paginação li 
+{
+    display: inline;
+}
+
+ul.paginação li a 
+{
+    color: black;
+    background-color: var(--white);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid;
+    margin: 0 4px; 
+}
+
+ul.paginação li a:hover
+{
+    background-color: var(--middleBlue);
+    color: var(--white);
+}
+
+
+/*Estilizando campos do formulário*/
+.formulário input[type="text"], input[type="email"], input[type="number"], select, input[type="file"], .custom-file-upload, input[type="password"]
+{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    margin-left: auto 0;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 200px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.formulário  input[type="time"],input[type="date"]
+{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1px sans-serif;
+    margin-left: auto 0;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 100px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+.comments
+{
+    margin-left: 1vw;
+}
+.comments select, textarea
+{
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    margin-left: auto 0;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 400px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50px;
+    text-align: center;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.review {
+    margin-top: 10px;
+    border-top: 1px solid #000000;
+    margin-left: 1vw;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+input[type="file"]
+{
+    display: none;
+}
+.categoria
+{
+    height: 10vh;
+    width: 100vw;
+}
+.insere-texto
+{    
+    /* Para certificar-se que todos os campos de texto têm as mesmas configurações de fonte. Por padrão, textareas ter uma fonte monospace*/
+    font: 1em sans-serif;
+    margin-left: auto 0;
+
+    /* Para dar o mesmo width a todos os campo de texto */
+    width: 200px;
+    height: 200px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.custom-file-upload 
+{
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+
