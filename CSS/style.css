@@ -11,7 +11,7 @@
 }
 body 
 {    
-    background-image: linear-gradient(to top, to bottom, rgba(0,0,255,0),rgba(0,0,255,0), rgba(163,227,255,0.9));
+    background-image: linear-gradient(to top, to bottom, rgba(0,0,255,0),rgba(0,0,255,0), rgba(255,192,203,0.9));
     color: #000;
     font: 12px Verdana, sans-serif;
     overflow-x: hidden;
@@ -40,7 +40,7 @@ body
 /*Barra superior*/ 
 .barra-superior
 {
-    background-image: linear-gradient(to top, rgba(0,0,255,0), rgba(163,227,255,0.9));
+    background-image: linear-gradient(to top, rgba(0,0,255,0), rgba(255,192,203,0.9));
     width: 100%;
     text-align: center;
     align-items: center;
@@ -140,8 +140,8 @@ body
     padding: 10px 20px;
     margin-right: 10px;
     margin-top: 20px;
-    background-color: #0066cc;
-    color: #fff;
+    background-color: #ffc0cb;
+    color: #000;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
